@@ -1,10 +1,6 @@
 #!/usr/bin/bash
 set -o nounset -o errexit
 
-WORKDIR="/root/ipa-le"
-
-dnf install letsencrypt -y
-
 ipa-cacert-manage install "$WORKDIR/ca/DSTRootCAX3.pem" -n DSTRootCAX3 -t C,,
 ipa-certupdate -v
 

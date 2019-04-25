@@ -1,10 +1,6 @@
 #!/usr/bin/bash
 set -o nounset -o errexit
 
-WORKDIR="/root/ipa-le"
-EMAIL=""
-#cd "$WORKDIR"
-
 ### cron
 # check that the cert will last at least 2 days from now to prevent too frequent renewal
 # comment out this line for the first run
